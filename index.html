@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nature & River Oasis</title>
+    <style>
+        /* Basic Setup */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f0fdf4;
+        }
+
+        /* Hero Section with River Image */
+        .hero {
+            height: 80vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), 
+                              url('https://images.unsplash.com/photo-1546114131-016462c16c09?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            color: white;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        .hero-content h1 {
+            font-size: 4rem;
+            margin-bottom: 10px;
+        }
+
+        .hero-content p {
+            font-size: 1.5rem;
+            max-width: 600px;
+            margin: 0 auto 20px auto;
+        }
+
+        /* Button Style */
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background-color: #166534;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.1rem;
+            transition: 0.3s;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        .btn:hover {
+            background-color: #15803d;
+            transform: translateY(-2px);
+        }
+
+        /* Features Section */
+        .features {
+            padding: 50px 20px;
+            background-color: #dcfce7;
+            text-align: center;
+        }
+
+        .features h2 {
+            font-size: 2.5rem;
+            color: #15803d;
+            margin-bottom: 30px;
+        }
+
+        .feature-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .feature-item {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        .feature-item h3 {
+            color: #166534;
+        }
+
+        /* Bottom River Section */
+        .river-footer {
+            height: 40vh;
+            background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.6)), 
+                              url('https://images.unsplash.com/photo-1547372439-50c1f5ffb6c0?q=80&w=2000');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+
+        footer {
+            padding: 20px;
+            background-color: #052e16;
+            color: #86efac;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Green Oasis</h1>
+            <p>Experience the serenity of the river and lush nature.</p>
+            <a href="#river" class="btn">Explore Now</a>
+        </div>
+    </header>
+
+    <section class="features">
+        <h2>Nature Highlights</h2>
+        <div class="feature-grid">
+            <div class="feature-item">
+                <h3>Dense Forests</h3>
+                <p>Breathe pure air amidst the majestic ancient trees.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Flowing Rivers</h3>
+                <p>Listen to the calming sound of water flowing through the valley.</p>
+            </div>
+            <div class="feature-item">
+                <h3>Peace & Quiet</h3>
+                <p>The perfect escape from the city to find your inner peace.</p>
+            </div>
+        </div>
+        </section>
+
+    <div id="river" class="river-footer">
+        <h3>The River: The Heart of the Oasis</h3>
+    </div>
+
+    <footer>
+        <p>Created with VS Code & GitHub</p>
+    </footer>
+
+</body>
+</html>
