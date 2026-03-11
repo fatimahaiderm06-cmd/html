@@ -3,18 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Green Oasis - الواحة الخضراء</title>
+    <title>Green Oasis - الواحة الخضراء 3D</title>
     <style>
+        /* إعدادات الصفحة الأساسية */
         body, html {
             margin: 0;
             padding: 0;
             height: 100%;
             overflow: hidden;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* خط عصري */
         }
-        .container {
+
+        /* الحاوية الرئيسية بالخلفية الثلاثية الأبعاد */
+        .hero {
             width: 100%;
-            height: 100vh; /* ملء الشاشة بالكامل */
+            height: 100vh;
+            /* رابط مباشر لصورة منظرة طبيعي ثلاثي الأبعاد خلاب */
             background-image: url('https://image.spreadshirtmedia.net/image-server/v1/mp/products/T210A2MPA3304PT17X49Y26D195415712W11818H10000/views/1,width=1200,height=1200,appearanceId=2,backgroundColor=F2F2F2,version=1685360699/3d-landscape-render-sunny-river-forest-mountains-apron.jpg');
             background-size: cover; /* جعل الصورة تغطي الشاشة */
             background-position: center; /* توسط الصورة */
@@ -25,24 +29,42 @@
             align-items: center;
             text-align: center;
         }
-        h1 {
-            color: white; /* تغيير اللون لأبيض ليظهر فوق الصورة */
-            font-size: 50px;
-            text-shadow: 2px 2px 5px rgba(0,0,0,0.5); /* إضافة ظل خفيف للنص */
-            margin-bottom: 5px;
+
+        /* طبقة تعتيم خفيفة لإبراز النص فوق الصورة القوية */
+        .overlay {
+            background: rgba(0, 0, 0, 0.4); /* تظليل متوسط */
+            padding: 50px 80px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* ظل للصندوق نفسه */
         }
+
+        /* تنسيق العنوان الكبير */
+        h1 {
+            color: #ffffff; /* أبيض ناصع */
+            font-size: 70px;
+            margin: 0;
+            font-weight: 800;
+            text-transform: uppercase; /* حروف كبيرة للغة الإنجليزية */
+            letter-spacing: 3px; /* مسافات بين الحروف */
+            text-shadow: 3px 3px 15px rgba(0,0,0,0.7); /* ظل قوي للنص */
+        }
+
+        /* تنسيق الوصف العربي */
         p {
-            color: white; /* تغيير اللون لأبيض */
-            font-size: 20px;
-            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
-            margin-bottom: 20px;
+            color: #f8f9fa; /* أبيض مائل قليلاً للرمادي للتباين */
+            font-size: 28px;
+            margin-top: 15px;
+            font-weight: 400;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.6);
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Green Oasis</h1>
-        <p>Experience the serenity of the river and lush nature.</p>
+    <div class="hero">
+        <div class="overlay">
+            <h1>Green Oasis</h1>
+            <p>استكشف جمال النهر الخالد وروح الطبيعة الشمسية الـ 3D</p>
+        </div>
     </div>
 </body>
 </html>
